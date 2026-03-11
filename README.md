@@ -15,20 +15,20 @@ An Android app that streamlines citizen and vehicle record management for a gove
 ## Features
 
 ### User
-- 🔍 Search vehicles by registration number
-- 👤 View personal profile including license details
-- 📋 Submit requests to update personal details (name, address, mobile, email, insurance)
-- 📬 Track request status: Pending, Approved, Rejected, Appealed, Appeal Rejected
-- ⚖️ Appeal rejected requests with a reason
-- 📜 Browse and search government policies
-- 🔔 Real-time push notifications for request updates and new policies
-- 🤖 Chat with **PolyRecBot**: an AI assistant powered by Microsoft Phi-3
+- Search vehicles by registration number
+- View personal profile including license details
+- Submit requests to update personal details (name, address, mobile, email, insurance)
+- Track request status: Pending, Approved, Rejected, Appealed, Appeal Rejected
+- Appeal rejected requests with a reason
+- Browse and search government policies
+- Real-time push notifications for request updates and new policies
+- Chat with **PolyRecBot**: an AI assistant powered by Microsoft Phi-3
 
 ### Admin
-- 🔍 Search users by license number
-- 🔎 Advanced vehicle search using filters (e.g. `make:Tesla type:SUV`)
-- ✅ Accept or reject user update requests
-- 📋 Add new policies that notify all users
+- Search users by license number
+- Advanced vehicle search using filters (e.g. `make:Tesla type:SUV`)
+- Accept or reject user update requests
+- Add new policies that notify all users
 
 ## Tech Stack
 
