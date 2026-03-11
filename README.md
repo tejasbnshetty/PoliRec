@@ -52,6 +52,7 @@ An Android app that streamlines citizen and vehicle record management for a gove
 - **Domain constrained chatbot**: PolyRecBot uses a system prompt to restrict responses to app-related topics, general driving rules, and Australian road policies
 - **Foreground notification service**: listens for Firebase changes in the background and delivers real time push notifications for request and policy updates
 - **Advanced search tokenizer**: admin vehicle search supports a custom filter grammar (e.g. `make:Toyota model:"Corolla" type:SUV`) with stop word handling
+- **Real-time sync**: built on Firebase Realtime Database, meaning any changes (request status updates, new policies, admin actions) are instantly reflected across all devices for the relevant user without requiring a manual refresh.
 
 ## Getting Started
 
