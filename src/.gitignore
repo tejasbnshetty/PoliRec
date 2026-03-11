@@ -14,3 +14,5 @@
 .cxx
 local.properties
 google-services.json
+src/app/src/main/assets/LlmConfig.json
+items/
