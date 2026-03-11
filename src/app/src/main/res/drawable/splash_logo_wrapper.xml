@@ -1,0 +1,3 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/polyrec" android:top="32dp" android:bottom="32dp" android:left="32dp" android:right="32dp"/>
+</layer-list>

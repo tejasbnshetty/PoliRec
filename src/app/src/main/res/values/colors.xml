@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="primary_blue">#0D47A1</color> <!-- Header/button -->
+    <color name="accent_blue">#1565C0</color> <!-- Secondary buttons -->
+    <color name="text_dark">#212121</color> <!-- Main text -->
+    <color name="text_light">#757575</color> <!-- Hint/label text -->
+    <color name="bg_light">#F5F5F5</color> <!-- Background -->
+    <color name="light_blue">#90CAF9</color> <!-- Light blue from Material 500 range -->
+    <color name="hint_blue">#90A4AE</color> <!-- Example of a softer blue-gray -->
+    <color name="softBlue">#F5FBFF</color> <!-- Background -->
+    <color name="cyanish">#3CCFCF</color>
+    <color name="orange">#FFA000</color>
+    <color name="error_red">#D32F2F</color>
+    <color name="purple">#9C27B0</color>
+    <color name="status_warning_green">#558B2F</color>
+
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@android:color/white">
+
+    <!-- Form Title -->
+    <TextView
+        android:id="@+id/textAppealTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Appeal Form"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Username Label -->
+    <TextView
+        android:id="@+id/appealUsernameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/textAppealTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Username Input (disabled) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/appealedUserLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/primary_blue"
+        app:layout_constraintTop_toBottomOf="@id/appealUsernameTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/appealedUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:contentDescription="Username" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Request ID Label -->
+    <TextView
+        android:id="@+id/appealReqIDTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Request ID"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/appealedUserLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Request ID Input (disabled) -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/appealReqIDLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/primary_blue"
+        app:layout_constraintTop_toBottomOf="@id/appealReqIDTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/appealReqID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:contentDescription="Request ID" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/appealReasonLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:boxBackgroundMode="outline"
+        app:boxStrokeColor="@color/primary_blue"
+        app:hintTextColor="@color/primary_blue"
+        app:layout_constraintTop_toBottomOf="@id/appealReqIDLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/appealDetailsInput"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Explain the reason for your appeal here"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:textColor="@android:color/black"
+            android:maxLines="5" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <!-- Submit Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submitAppealButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/light_blue"
+        app:cornerRadius="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/appealReasonLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cancel Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/appealCancelButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/primary_blue"
+        app:cornerRadius="24dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toBottomOf="@id/submitAppealButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

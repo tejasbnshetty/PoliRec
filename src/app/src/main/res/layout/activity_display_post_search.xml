@@ -1,0 +1,27 @@
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAF9FC">
+
+    <LinearLayout
+        android:id="@+id/vehicle_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/user_info_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicles"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_blue"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="8dp" />
+    </LinearLayout>
+</ScrollView>
